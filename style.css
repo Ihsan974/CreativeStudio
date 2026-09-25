@@ -290,20 +290,24 @@ a {
 ========================================= */
 
 .hero {
-    display: flex !important;
-    align-items: center !important;
-    min-height: 100vh !important;
-    padding-top: 90px !important;
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 90px;
+
+    overflow: hidden;
 }
 
-.hero .container.hero-content {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    width: min(calc(100% - 64px), var(--container)) !important;
-    margin-inline: auto !important;
-    position: relative !important;
-    z-index: 3 !important;
+.hero-content {
+    position: relative;
+
+    z-index: 3;
+
+    width: 58%;
 }
 
 
@@ -342,9 +346,17 @@ a {
 ========================================= */
 
 .hero h1 {
-    max-width: 55% !important; /* എഴുത്തുകൾ ചിത്രത്തിന്റെ അടിയിലേക്ക് കയറുന്നത് പൂർണ്ണമായി തടയാൻ */
-    font-size: clamp(38px, 4.2vw, 62px) !important;
-    line-height: 1.1 !important;
+    width: 100%;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(38px, 4.4vw, 64px);
+
+    line-height: 1.1;
+
+    letter-spacing: -0.05em;
+
+    font-weight: 700;
 }
 
 .hero h1 span {
@@ -398,22 +410,36 @@ a {
 ========================================= */
 
 .hero-autoparts-container {
-    position: absolute !important;
-    right: calc((100% - min(calc(100% - 64px), var(--container))) / 2 + 2%) !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    width: 38% !important;
-    max-width: 500px !important;
-    z-index: 2 !important;
+    position: absolute;
+
+    right: 4%;
+    top: 52%;
+
+    transform: translateY(-50%);
+
+    width: 36%;
+    max-width: 480px;
+
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: none;
 }
 
 .hero-autoparts-img {
     width: 100%;
     height: auto;
+
     object-fit: contain;
+
     animation: partsFloat 5s ease-in-out infinite;
-    /* ഷാഡോ മാറ്റി കറക്റ്റ് ഇമേജിന് താഴെയാക്കാൻ താഴത്തെ വരി പുതുക്കുക */
-    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15)); 
+
+    filter: drop-shadow(
+        0 15px 30px rgba(0, 0, 0, 0.12)
+    );
 }
 
 @keyframes partsFloat {
@@ -1324,15 +1350,11 @@ a {
 ========================================= */
 
 @media (max-width: 600px) {
-    
-    .hero-bottom {
-        position: relative !important;
-        bottom: auto !important;
-        left: auto !important;
-        transform: none !important;
-        margin-top: 40px !important;
+
+    .container {
+        width: calc(100% - 36px);
     }
-}
+
     /* HEADER */
 
     .nav {
