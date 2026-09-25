@@ -1970,3 +1970,136 @@ h1 {
 .crafted-text {
     font-style: italic;
 }
+
+/* =========================================
+   SELECTED WORK - GALLERY GRID (2 HALF CARDS)
+========================================= */
+
+/* മെയിൻ സെക്ഷൻ പാഡിങ് */
+.work-section {
+    padding: 100px 0;
+    background: var(--bg);
+}
+
+/* ഹെഡിങ് ഭാഗം അലൈൻ ചെയ്യാൻ */
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.work-header h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(32px, 3.5vw, 48px);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+/* വ്യൂ ഓൾ പ്രൊജക്റ്റ് ബട്ടൺ സ്റ്റൈൽ */
+.btn-secondary {
+    padding: 11px 20px;
+    border: 1px solid var(--text);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background: var(--text);
+    color: var(--white);
+}
+
+/* 2 കോളങ്ങളുള്ള മെയിൻ ഗ്രിഡ് ലേഔട്ട് */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px; /* കാർഡുകൾ തമ്മിലുള്ള അകലം (റോ & കോളം) */
+    width: 100%;
+}
+
+/* കാർഡുകളുടെ ബേസ് സ്റ്റൈൽ */
+.work-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ഇമേജ് ബോക്സ് സ്റ്റൈൽ */
+.card-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius); /* നിങ്ങളുടെ ഒറിജിനൽ വലിപ്പത്തിലുള്ള വളഞ്ഞ അരികുകൾ */
+    background: var(--surface);
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+/* മൗസ് കൊണ്ടുവരുമ്പോൾ ഉള്ള പ്രീമിയം ഹൂവർ ആനിമേഷൻ */
+.work-card:hover .card-image img {
+    transform: scale(1.02);
+}
+
+/* ടെക്സ്റ്റ് വിവരങ്ങൾ */
+.card-info h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.card-info p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 1. ഒന്നാമത്തെ വലിയ കാർഡ് മാത്രം ഫുൾ വിഡ്ത്ത് (2 കോളവും എടുക്കാൻ) ആക്കുന്നു */
+.large-card {
+    grid-column: span 2;
+}
+
+.large-card .card-image img {
+    max-height: 520px; /* വലിയ കാർഡിന്റെ ഹൈറ്റ് ലിമിറ്റ് ചെയ്യാൻ */
+    object-fit: cover;
+}
+
+/* 2 & 3. താഴെ വരുന്ന രണ്ട് പകുതി കാർഡുകളുടെ ഇമേജ് ഹൈറ്റ് ഒരേപോലെയാക്കാൻ */
+.half-card .card-image img {
+    height: 340px; 
+    object-fit: cover;
+}
+
+
+/* =========================================
+   RESPONSIVE (മൊബൈൽ ഫോണുകൾക്ക് വേണ്ടി)
+========================================= */
+@media (max-width: 768px) {
+    .work-grid {
+        grid-template-columns: 1fr; /* മൊബൈലിൽ എല്ലാം ഒന്നിന് താഴെ ഒന്നാകും */
+        gap: 35px;
+    }
+    
+    .large-card {
+        grid-column: span 1;
+    }
+    
+    .half-card .card-image img {
+        height: auto; /* മൊബൈലിൽ ഇമേജ് കൃത്യമായി ചുരുങ്ങാൻ */
+    }
+    
+    .work-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
