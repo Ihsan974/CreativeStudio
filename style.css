@@ -292,20 +292,17 @@ a {
 
 .hero {
     position: relative;
-
     min-height: 100vh;
-
     display: flex;
     align-items: center;
-
     padding-top: 90px;
-
     overflow: hidden;
 }
 
 .hero-content {
     position: relative;
     z-index: 3;
+    width: 55%; /* എഴുത്തുകൾക്ക് സ്ക്രീനിന്റെ 55% സ്ഥലം മാത്രം നൽകുന്നു */
 }
 
 
@@ -346,7 +343,7 @@ a {
 .hero h1 {
     max-width: 100%;
     font-family: "Manrope", sans-serif;
-    font-size: clamp(40px, 4.8vw, 68px);
+    font-size: clamp(38px, 4.2vw, 62px); /* വലിപ്പം അല്പം കുറച്ചു, അപ്പോൾ ഭംഗിയായി ഒതുങ്ങും */
     line-height: 1.1;
     letter-spacing: -0.05em;
     font-weight: 700;
