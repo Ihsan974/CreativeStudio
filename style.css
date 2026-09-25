@@ -1715,14 +1715,14 @@ body {
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
     
-    /* Absolute Positioning വഴി സ്ക്രീനിന്റെ നടുവിലേക്ക് കൃത്യമായി ലോക്ക് ചെയ്യുന്നു */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    /* സ്ക്രീനിന്റെ കൃത്യം മധ്യത്തിലേക്ക് നിർബന്ധിതമായി ലോക്ക് ചെയ്യുന്നു */
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
 }
 
 .nav-links a, .dropbtn {
