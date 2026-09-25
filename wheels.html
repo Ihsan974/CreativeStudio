@@ -10,29 +10,34 @@
 <body>
 
     <!-- HEADER SECTION -->
-    <header class="navbar" style="position: relative !important; display: flex !important; justify-content: space-between !important; align-items: center !important;">
-        <div class="logo">
-            <a href="index.html">
-                <img src="./images/logo.png" alt="NOIR Logo">
-                </a>
+    <header class="navbar" style="position: relative !important; display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 25px 8% !important; background-color: #fcfbf9 !important; width: 100% !important; box-sizing: border-box !important;">
+        
+        <!-- 1. Logo Box (ലോഗോയ്ക്ക് പിന്നിലെ ആ ബോക്സ് ഒഴിവാക്കാൻ background: none നൽകിയിട്ടുണ്ട്) -->
+        <div class="logo" style="display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border-radius: 0 !important; box-shadow: none !important;">
+            <a href="index.html" style="display: flex !important; align-items: center !important; background: none !important; padding: 0 !important;">
+                <!-- ലോഗോയുടെ വലിപ്പം engine.html ലേതുപോലെ (height: 28px) ആക്കിയത് -->
+                <img src="./images/logo.png" alt="NOIR Logo" style="height: 28px !important; width: auto !important; display: block !important; object-fit: contain !important; background: none !important; padding: 0 !important; border: none !important;">
+            </a>
         </div>
         
-        <nav class="nav-links" style="display: flex !important; align-items: center !important; gap: 30px !important; position: absolute !important; left: 50% !important; transform: translateX(-50%) !important; margin: 0 !important; padding: 0 !important;">
+        <!-- 2. Central Navigation Links (മെനു എപ്പോഴും സ്ക്രീനിന്റെ കൃത്യം മധ്യത്തിൽ ലോക്ക് ചെയ്യാനുള്ള കോഡ്) -->
+        <nav class="nav-links" style="display: flex !important; align-items: center !important; gap: 30px !important; position: absolute !important; left: 50% !important; transform: translateX(-50%) !important; margin: 0 !important; padding: 0 !important; z-index: 10 !important;">
             <div class="dropdown">
-                <a href="#" class="dropbtn">Products ▾</a>
+                <a href="#" class="dropbtn" style="text-decoration: none !important; color: #555 !important; font-size: 14px !important; font-weight: 500 !important;">Products ▾</a>
                 <div class="dropdown-content">
                     <a href="wheels.html">Alloy Wheels</a>
                     <a href="engine.html">Engine Modules</a>
                     <a href="exhaust.html">Exhaust Systems</a>
                 </div>
             </div>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="services.html" style="text-decoration: none !important; color: #555 !important; font-size: 14px !important; font-weight: 500 !important;">Services</a>
+            <a href="about.html" style="text-decoration: none !important; color: #555 !important; font-size: 14px !important; font-weight: 500 !important;">About</a>
+            <a href="contact.html" style="text-decoration: none !important; color: #555 !important; font-size: 14px !important; font-weight: 500 !important;">Contact</a>
         </nav>
         
-        <div class="navbar-cta-box">
-            <a href="contact.html" class="btn-cta">Start a project ↗</a>
+        <!-- 3. CTA Button Box (ഇത് വലതുവശത്ത് കൃത്യമായി ഒതുങ്ങി ഇരിക്കാൻ വേണ്ടി) -->
+        <div class="navbar-cta-box" style="display: flex !important; justify-content: flex-end !important;">
+            <a href="contact.html" class="btn-cta" style="text-decoration: none !important; color: #1a1a1a !important; border: 1px solid #1a1a1a !important; padding: 10px 22px !important; border-radius: 30px !important; font-size: 13px !important; font-weight: 500 !important; white-space: nowrap !important;">Start a project ↗</a>
         </div>
         
     </header>
@@ -45,7 +50,6 @@
             
             <div class="grid-container">
                 <div class="image-box">
-                    <!-- നിങ്ങളുടെ ഇമേജ് ഫയലിന്റെ പേര് wheels.jpg എന്നാക്കുക അല്ലെങ്കിൽ ഇവിടെ പേര് മാറ്റുക -->
                     <img src="./images/project-one.png" alt="Forged Alloy Wheels">
                 </div>
                 <div class="text-box">
