@@ -1,6 +1,7 @@
+```css
 /* =========================================
    NOIR — CREATIVE DIGITAL STUDIO
-   BALANCED PREMIUM RESPONSIVE CSS
+   PREMIUM RESPONSIVE CSS
 ========================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
@@ -137,9 +138,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
-
     z-index: 1000;
 }
 
@@ -152,7 +151,9 @@ a {
 }
 
 
-/* LOGO */
+/* =========================================
+   LOGO
+========================================= */
 
 .logo {
     font-family: "Manrope", sans-serif;
@@ -168,7 +169,9 @@ a {
 }
 
 
-/* DESKTOP NAV */
+/* =========================================
+   DESKTOP NAV
+========================================= */
 
 .desktop-nav {
     display: flex;
@@ -208,7 +211,9 @@ a {
 }
 
 
-/* NAV BUTTON */
+/* =========================================
+   NAV BUTTON
+========================================= */
 
 .nav-button {
     padding: 11px 16px;
@@ -232,7 +237,9 @@ a {
 }
 
 
-/* MOBILE BUTTON */
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
 
 .menu-button {
     display: none;
@@ -270,7 +277,9 @@ a {
 }
 
 
-/* MOBILE MENU */
+/* =========================================
+   MOBILE MENU
+========================================= */
 
 .mobile-menu {
     display: none;
@@ -300,7 +309,9 @@ a {
 }
 
 
-/* LABEL */
+/* =========================================
+   HERO LABEL
+========================================= */
 
 .hero-label {
     display: flex;
@@ -328,16 +339,18 @@ a {
 }
 
 
-/* MAIN HEADING */
+/* =========================================
+   HERO HEADING
+========================================= */
 
 .hero h1 {
-    max-width: 850px;
+    max-width: 55%;
 
     font-family: "Manrope", sans-serif;
 
-    font-size: clamp(48px, 6vw, 82px);
+    font-size: clamp(40px, 5.5vw, 76px);
 
-    line-height: 0.98;
+    line-height: 1.05;
 
     letter-spacing: -0.065em;
 
@@ -350,7 +363,9 @@ a {
 }
 
 
-/* DESCRIPTION */
+/* =========================================
+   HERO DESCRIPTION
+========================================= */
 
 .hero-description {
     max-width: 500px;
@@ -365,7 +380,9 @@ a {
 }
 
 
-/* ACTIONS */
+/* =========================================
+   HERO ACTIONS
+========================================= */
 
 .hero-actions {
     display: flex;
@@ -386,70 +403,62 @@ a {
 }
 
 
-/* HERO SHAPES */
+/* =========================================
+   HERO AUTOPARTS IMAGE
+========================================= */
 
-.hero-shape {
+.hero-autoparts-container {
     position: absolute;
 
-    border-radius: 50%;
+    right: 4%;
+    top: 55%;
+
+    transform: translateY(-50%);
+
+    width: 38%;
+    max-width: 500px;
+
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     pointer-events: none;
 }
 
-.shape-one {
-    width: 380px;
-    height: 380px;
+.hero-autoparts-img {
+    width: 100%;
+    height: auto;
 
-    right: 4%;
-    top: 20%;
+    object-fit: contain;
 
-    background: #e7c7bc;
+    animation: partsFloat 5s ease-in-out infinite;
 
-    opacity: 0.6;
-
-    animation: floatOne 8s ease-in-out infinite;
+    filter: drop-shadow(
+        0 15px 30px rgba(0, 0, 0, 0.12)
+    );
 }
 
-.shape-two {
-    width: 220px;
-    height: 220px;
+@keyframes partsFloat {
 
-    right: 22%;
-    bottom: 10%;
-
-    background: #d7ddd0;
-
-    opacity: 0.8;
-
-    animation: floatTwo 10s ease-in-out infinite;
-}
-
-@keyframes floatOne {
-
-    0%,
-    100% {
-        transform: translate(0, 0);
+    0% {
+        transform: translateY(0) rotate(0deg);
     }
 
     50% {
-        transform: translate(-25px, 25px);
+        transform: translateY(-15px) rotate(1deg);
     }
-}
 
-@keyframes floatTwo {
-
-    0%,
     100% {
-        transform: translate(0, 0);
-    }
-
-    50% {
-        transform: translate(25px, -20px);
+        transform: translateY(0) rotate(0deg);
     }
 }
 
 
-/* HERO BOTTOM */
+/* =========================================
+   HERO BOTTOM
+========================================= */
 
 .hero-bottom {
     position: absolute;
@@ -534,6 +543,7 @@ a {
 
 .section-heading {
     display: flex;
+
     justify-content: space-between;
     align-items: flex-end;
 
@@ -565,7 +575,9 @@ a {
 }
 
 
-/* SERVICE LIST */
+/* =========================================
+   SERVICE LIST
+========================================= */
 
 .service-list {
     border-top: 1px solid var(--line);
@@ -636,6 +648,7 @@ a {
 
 .service-card:hover .service-arrow {
     background: var(--text);
+
     color: var(--white);
 
     transform: rotate(45deg);
@@ -657,7 +670,9 @@ a {
 }
 
 
-/* OUTLINE BUTTON */
+/* =========================================
+   OUTLINE BUTTON
+========================================= */
 
 .outline-button {
     padding: 12px 17px;
@@ -675,11 +690,14 @@ a {
 
 .outline-button:hover {
     background: var(--text);
+
     color: var(--white);
 }
 
 
-/* PROJECT GRID */
+/* =========================================
+   PROJECT GRID
+========================================= */
 
 .projects {
     display: grid;
@@ -694,7 +712,9 @@ a {
 }
 
 
-/* PROJECT IMAGE */
+/* =========================================
+   PROJECT IMAGE
+========================================= */
 
 .project-image {
     position: relative;
@@ -713,7 +733,9 @@ a {
 }
 
 
-/* PROJECT BACKGROUNDS */
+/* =========================================
+   PROJECT BACKGROUNDS
+========================================= */
 
 .project-one {
     background:
@@ -758,7 +780,9 @@ a {
 }
 
 
-/* PROJECT DECORATION */
+/* =========================================
+   PROJECT DECORATION
+========================================= */
 
 .project-image::before {
     content: "";
@@ -808,7 +832,9 @@ a {
 }
 
 
-/* PROJECT OVERLAY */
+/* =========================================
+   PROJECT OVERLAY
+========================================= */
 
 .project-overlay {
     position: absolute;
@@ -833,7 +859,9 @@ a {
 }
 
 
-/* PROJECT INFO */
+/* =========================================
+   PROJECT INFO
+========================================= */
 
 .project-info {
     padding-top: 16px;
@@ -1015,7 +1043,6 @@ a {
     to {
         transform: translateX(-50%);
     }
-
 }
 
 
@@ -1173,6 +1200,8 @@ a {
         width: calc(100% - 50px);
     }
 
+    /* NAV */
+
     .desktop-nav,
     .nav-button {
         display: none;
@@ -1181,7 +1210,6 @@ a {
     .menu-button {
         display: block;
     }
-
 
     /* MOBILE MENU */
 
@@ -1195,7 +1223,6 @@ a {
         padding: 25px;
 
         background: var(--text);
-
         color: var(--white);
 
         border-radius: 18px;
@@ -1246,27 +1273,45 @@ a {
 
     /* HERO */
 
-    .hero h1 {
-        max-width: 720px;
+    .hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding-bottom: 60px;
     }
 
-    .shape-one {
-        right: -100px;
+    .hero h1 {
+        max-width: 100%;
+    }
+
+    .hero-autoparts-container {
+        position: relative;
+
+        top: auto;
+        right: auto;
+
+        transform: none;
+
+        width: 80%;
+
+        margin: 40px auto 0;
+
+        z-index: 3;
     }
 
 
     /* INTRO */
 
-    .intro-grid,
-    .about-grid {
+    .intro-grid {
         grid-template-columns: 80px 1fr;
     }
 
 
-    /* SERVICES */
+    /* ABOUT */
 
-    .service-card {
-        grid-template-columns: 60px 1fr 50px;
+    .about-grid {
+        grid-template-columns: 80px 1fr;
     }
 
 
@@ -1275,32 +1320,16 @@ a {
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
 
-        gap: 45px 0;
+        row-gap: 45px;
     }
 
-    .stat:nth-child(2) {
+    .stat {
         border-right: none;
     }
 
-    .stat:nth-child(3) {
+    .stat:nth-child(odd) {
         padding-left: 0;
     }
-
-
-    /* PROJECTS */
-
-    .projects {
-        gap: 45px 22px;
-    }
-
-    .project-image {
-        min-height: 330px;
-    }
-
-    .project-large .project-image {
-        min-height: 420px;
-    }
-
 }
 
 
@@ -1336,7 +1365,7 @@ a {
     /* HERO */
 
     .hero {
-        min-height: 760px;
+        min-height: auto;
 
         padding-top: 105px;
 
@@ -1353,6 +1382,8 @@ a {
         font-size: 46px;
 
         line-height: 0.96;
+
+        max-width: 100%;
     }
 
     .hero-description {
@@ -1371,56 +1402,54 @@ a {
         margin-top: 25px;
     }
 
-    .hero-bottom {
-        width: calc(100% - 36px);
+    .hero-autoparts-container {
+        width: 90%;
 
-        bottom: 20px;
+        margin: 30px auto 0;
+    }
+
+    .hero-bottom {
+        position: relative;
+
+        left: auto;
+
+        transform: none;
+
+        width: 100%;
+
+        margin-top: 50px;
+
+        bottom: 0;
     }
 
     .scroll-line {
         width: 30%;
     }
 
-    .shape-one {
-        width: 260px;
-        height: 260px;
-
-        right: -120px;
-
-        top: 42%;
-    }
-
-    .shape-two {
-        width: 150px;
-        height: 150px;
-
-        right: 4%;
-    }
-
 
     /* INTRO */
 
     .intro {
-        padding: 95px 0;
+        padding: 90px 0;
     }
 
-    .intro-grid,
-    .about-grid {
-        grid-template-columns: 1fr;
+    .intro-grid {
+        display: block;
+    }
 
-        gap: 28px;
+    .intro .section-number {
+        margin-bottom: 30px;
     }
 
     .intro h2 {
-        font-size: 40px;
+        font-size: 42px;
     }
 
 
     /* SERVICES */
 
-    .services,
-    .work {
-        padding: 100px 0;
+    .services {
+        padding: 90px 0;
     }
 
     .section-heading {
@@ -1430,59 +1459,51 @@ a {
 
         gap: 25px;
 
-        margin-bottom: 50px;
+        margin-bottom: 45px;
     }
 
     .section-heading h2 {
-        font-size: 42px;
+        font-size: 44px;
     }
-
-    .section-heading > p {
-        font-size: 14px;
-    }
-
-
-    /* SERVICE CARD */
 
     .service-card {
-        min-height: auto;
+        min-height: 140px;
 
-        padding: 27px 0;
+        grid-template-columns: 35px 1fr 45px;
 
-        grid-template-columns: 30px 1fr;
-
-        gap: 12px;
+        gap: 15px;
     }
 
     .service-card:hover {
-        padding-left: 0;
-    }
-
-    .service-number {
-        align-self: flex-start;
-
-        padding-top: 4px;
+        padding-left: 8px;
     }
 
     .service-content h3 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .service-content p {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .service-arrow {
-        display: none;
+        width: 38px;
+        height: 38px;
+
+        font-size: 15px;
     }
 
 
-    /* PROJECTS */
+    /* WORK */
+
+    .work {
+        padding: 90px 0;
+    }
 
     .projects {
         grid-template-columns: 1fr;
 
-        gap: 45px;
+        gap: 35px;
     }
 
     .project-large {
@@ -1494,8 +1515,27 @@ a {
         min-height: 340px;
     }
 
-    .project-info h3 {
-        font-size: 24px;
+
+    /* ABOUT */
+
+    .about {
+        padding: 95px 0;
+    }
+
+    .about-grid {
+        display: block;
+    }
+
+    .about .section-number {
+        margin-bottom: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 45px;
+    }
+
+    .about-content > p {
+        font-size: 14px;
     }
 
 
@@ -1506,46 +1546,17 @@ a {
     }
 
     .stats-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
 
-        gap: 40px 0;
+        row-gap: 40px;
     }
 
     .stat {
-        padding: 0 15px;
-    }
-
-    .stat:nth-child(odd) {
-        padding-left: 0;
-    }
-
-    .stat:nth-child(even) {
-        padding-right: 0;
+        padding: 0;
     }
 
     .stat strong {
-        font-size: 50px;
-    }
-
-    .stat span {
-        font-size: 8px;
-
-        line-height: 1.5;
-    }
-
-
-    /* ABOUT */
-
-    .about {
-        padding: 105px 0;
-    }
-
-    .about-content h2 {
-        font-size: 44px;
-    }
-
-    .about-content > p {
-        font-size: 14px;
+        font-size: 48px;
     }
 
 
@@ -1555,46 +1566,44 @@ a {
         padding: 18px 0;
     }
 
-    .marquee-track {
-        gap: 28px;
-    }
-
     .marquee-track span {
-        font-size: 42px;
+        font-size: 40px;
     }
 
 
     /* CONTACT */
 
     .contact {
-        padding: 110px 0;
+        padding: 100px 0;
     }
 
     .contact h2 {
-        font-size: 46px;
+        font-size: 48px;
 
-        margin-bottom: 35px;
+        margin-bottom: 32px;
     }
 
     .contact-email {
-        font-size: 15px;
+        font-size: 16px;
     }
 
 
     /* FOOTER */
 
     .footer {
-        padding-top: 55px;
+        padding: 55px 0 22px;
     }
 
     .footer-top {
         flex-direction: column;
 
-        padding-bottom: 50px;
+        gap: 45px;
+
+        padding-bottom: 45px;
     }
 
     .footer-links {
-        gap: 55px;
+        gap: 45px;
     }
 
     .footer-bottom {
@@ -1602,7 +1611,6 @@ a {
 
         gap: 10px;
     }
-
 }
 
 
@@ -1617,19 +1625,41 @@ a {
     }
 
     .intro h2 {
-        font-size: 37px;
-    }
-
-    .section-heading h2 {
-        font-size: 39px;
+        font-size: 38px;
     }
 
     .about-content h2 {
-        font-size: 41px;
+        font-size: 40px;
     }
 
     .contact h2 {
-        font-size: 42px;
+        font-size: 43px;
     }
 
+    .service-card {
+        grid-template-columns: 28px 1fr 40px;
+
+        gap: 10px;
+    }
 }
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+```
