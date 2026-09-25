@@ -347,9 +347,9 @@ a {
 ========================================= */
 
 .hero h1 {
-    max-width: 100%;
+    max-width: 60%; /* എഴുത്തുകൾ കൃത്യമായി ഇടതുവശത്ത് നിൽക്കാൻ */
     font-family: "Manrope", sans-serif;
-    font-size: clamp(38px, 4.2vw, 62px); /* വലിപ്പം അല്പം കുറച്ചു, അപ്പോൾ ഭംഗിയായി ഒതുങ്ങും */
+    font-size: clamp(38px, 4.2vw, 62px);
     line-height: 1.1;
     letter-spacing: -0.05em;
     font-weight: 700;
