@@ -1677,7 +1677,58 @@ a {
 }
 
 
-/* Dropdown Menu Styling */
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fcfbf9;
+    color: #1a1a1a;
+}
+
+/* Header Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    background-color: #fcfbf9;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a, .dropbtn {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links a:hover, .dropdown:hover .dropbtn {
+    color: #ff4500;
+}
+
+/* Dropdown Menu */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -1686,25 +1737,23 @@ a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f8f6;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
     border-radius: 8px;
-    z-index: 1;
-    top: 100%;
+    z-index: 10;
+    top: 120%;
+    padding: 10px 0;
 }
 
 .dropdown-content a {
     color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
+    padding: 10px 20px;
     display: block;
-    margin: 0;
-    font-size: 13px;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f0ed;
+    background-color: #f5f5f5;
     color: #ff4500;
 }
 
@@ -1712,11 +1761,110 @@ a {
     display: block;
 }
 
-/* Footer Advanced Styling */
+.btn-cta {
+    text-decoration: none;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Page Layout Content */
+.content-wrapper {
+    padding: 60px 8%;
+}
+
+.hero-section {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    color: #ff4500;
+}
+
+/* Two Column Grid */
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    text-align: left;
+}
+
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    background-color: #eaeaea; /* ഇമേജ് ലോഡായില്ലെങ്കിലും ബോക്സ് കാണാൻ */
+}
+
+.text-box {
+    flex: 1;
+}
+
+.text-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.text-box p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.btn-black {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-black:hover {
+    background-color: #444;
+}
+
+/* Footer Styling */
 .footer-section {
     background-color: #f6f5f2;
-    padding: 60px 8% 30px 8%;
-    margin-top: 100px;
+    padding: 80px 8% 40px 8%;
+    margin-top: 120px;
 }
 
 .footer-top {
@@ -1724,36 +1872,38 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .footer-brand .footer-logo {
     font-size: 28px;
-    font-weight: 800;
-    margin-bottom: 10px;
+    font-weight: 900;
+    margin-bottom: 15px;
 }
 
 .footer-brand p {
     color: #666;
-    max-width: 250px;
+    max-width: 280px;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .footer-nav h4, .footer-social h4 {
-    font-size: 14px;
+    font-size: 12px;
     color: #999;
     text-transform: uppercase;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
 }
 
 .footer-nav a, .footer-social a {
     display: block;
-    color: #333;
+    color: #1a1a1a;
     text-decoration: none;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
@@ -1764,7 +1914,7 @@ a {
 .footer-divider {
     border: 0;
     border-top: 1px solid #e0dfdb;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .footer-bottom {
@@ -1773,4 +1923,8 @@ a {
     align-items: center;
     font-size: 13px;
     color: #888;
+}
+
+.crafted-text {
+    font-style: italic;
 }
