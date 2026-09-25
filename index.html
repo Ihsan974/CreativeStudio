@@ -17,36 +17,42 @@
          HEADER
     ========================== -->
 
+        <!-- HEADER SECTION -->
     <header class="navbar">
-
-        <div class="container nav">
-
-            <a href="index.html" class="logo">
+        <!-- 1. Logo Box -->
+        <div class="logo">
+            <a href="index.html">
                 <img src="./images/logo.png" alt="Logo" style="height: 45px; width: auto;">
             </a>
-
-            <nav class="desktop-nav">
-                <div class="dropdown">
-                    <a href="#work" class="dropdown-trigger">Products ▾</a>
-                <div class="dropdown-menu">
-                        <a href="wheels.html">Alloy Wheels</a>
-                        <a href="engine.html">Engine Modules</a>
-                        <a href="exhaust.html">Exhaust Systems</a>
-                    </div>
+        </div>
+        
+        <!-- 2. Central Navigation Links (ക്ലാസ്സ് 'nav-links' എന്ന് മാറ്റിയിട്ടുണ്ട്) -->
+        <nav class="nav-links">
+            <div class="dropdown">
+                <a href="wheels.html" class="dropbtn">Products ▾</a>
+                <div class="dropdown-content">
+                    <a href="wheels.html">Alloy Wheels</a>
+                    <a href="engine.html">Engine Modules</a>
+                    <a href="exhaust.html">Exhaust Systems</a>
                 </div>
-                       <a href="#services">Services</a>
-                       <a href="#about">About</a>
-                       <a href="#contact">Contact</a>
-            </nav>
-
-            <div class="navbar-cta-box">
-                <a href="contact.html" class="btn-cta">Start a project ↗</a>
             </div>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <!-- 3. CTA Button Box -->
+        <div class="navbar-cta-box">
+            <a href="contact.html" class="btn-cta">Start a project ↗</a>
+        </div>
 
-            <button class="menu-button" id="menuButton">
-                <span></span>
-                <span></span>
-            </button>
+        <!-- Mobile Menu Button (ആവശ്യമെങ്കിൽ മാത്രം) -->
+        <button class="menu-button" id="menuButton">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
 
         </div>
 
