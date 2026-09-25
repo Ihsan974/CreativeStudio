@@ -753,21 +753,14 @@ a {
 
 .project-image::before {
     content: "";
-
     position: absolute;
-
     width: 200px;
     height: 200px;
-
     border-radius: 50%;
-
     background: rgba(255, 255, 255, 0.13);
-
     top: 20%;
     left: 30%;
-
     backdrop-filter: blur(10px);
-
     transition: transform 0.8s ease;
 }
 
