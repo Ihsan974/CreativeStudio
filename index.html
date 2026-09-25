@@ -332,53 +332,61 @@
                 </div>
 
 
-                <div class="projects">
+                        <!-- ഇതാണ് പ്രധാനപ്പെട്ട മാറ്റം: inline style വഴി ഇതിനെ 2 കോളങ്ങളുള്ള ഗ്രിഡ് ആക്കുന്നു -->
+        <div class="projects" style="display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 40px 30px !important; width: 100% !important;">
 
-                    <!-- Project 01 -->
-                    <a href="wheels.html" class="project project-large">
-                        <div class="project-image" style="background-image: url('./images/project-one.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
-                            <div class="project-overlay">
-                                <div>Featured Product</div>
-                                <div>Category 01</div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Forged Alloy Wheels</h3>
-                            <p>Bespoke lightweight wheels engineered for maximum brake clearance and premium street styling.</p>
+            <!-- <!-- Project 01 — ഇതാണ് വലിയ കാർഡ് (ഇതിന് മാത്രം grid-column: span 2 നൽകി) --> -->
+            <div class="project project-large" style="grid-column: span 2 !important; width: 100% !important;">
+                <a href="wheels.html" class="project-project-large">
+                    <!-- ഇമേജ് ബോക്സ് (വലിയ കാർഡിന് ഭംഗി കൂട്ടാൻ max-height നൽകാം) -->
+                    <div class="project-image" style="background-image: url('./images/project-one.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px !important; border-radius: 22px !important;">
+                        <div class="project-overlay">
+                            <div>Featured Product</div>
+                            <div>Category 01</div>
                         </div>
                     </div>
+                    <div class="project-info">
+                        <h3>Forged Alloy Wheels</h3>
+                        <p>Bespoke lightweight wheels engineered for maximum brake clearance and premium street styling.</p>
+                    </div>
+                </a>
+            </div>
 
-                    <!-- Project 02 -->
-                    <div class="project">
-                       <a href="engine.html" class="project">
-                        <div class="project-image" style="background-image: url('./images/project-two.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
-                            <div class="project-overlay">
-                                <div>Performance Upgrades</div>
-                                <div>Category 02</div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>High-Performance Engine Modules</h3>
-                            <p>Advanced turbochargers and custom intake manifolds built to extract maximum reliable horsepower.</p>
+            <!-- <!-- Project 02 — ഇടതുവശത്ത് പകുതി വലിപ്പത്തിൽ വരുന്നത് --> -->
+            <div class="project" style="width: 100% !important;">
+                <a href="engine.html" class="project">
+                    <!-- ഇമേജ് ബോക്സ് (പകുതി കാർഡിന് അനുയോജ്യമായ height: 320px ആക്കിയത്) -->
+                    <div class="project-image" style="background-image: url('./images/project-two.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 320px !important; border-radius: 22px !important;">
+                        <div class="project-overlay">
+                            <div>Performance Upgrades</div>
+                            <div>Category 02</div>
                         </div>
                     </div>
+                    <div class="project-info">
+                        <h3>High-Performance Engine Modules</h3>
+                        <p>Advanced turbochargers and custom intake manifolds built to extract maximum reliable horsepower.</p>
+                    </div>
+                </a>
+            </div>
 
-                    <!-- Project 03 -->
-                    <div class="project">
-                      <a href="exhaust.html" class="project">
-                        <div class="project-image" style="background-image: url('./images/project-three.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
-                            <div class="project-overlay">
-                                <div>Exhaust Systems</div>
-                                <div>Category 03</div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Custom Titanium Exhausts</h3>
-                            <p>Lightweight valvetronic exhaust setups designed for aggressive acoustics and peak power output.</p>
+            <!-- <!-- Project 03 — വലതുവശത്ത് പകുതി വലിപ്പത്തിൽ വരുന്നത് --> -->
+            <div class="project" style="width: 100% !important;">
+                <a href="exhaust.html" class="project">
+                    <!-- ഇമേജ് ബോക്സ് (പ്രൊജക്റ്റ് 3-ന്റെ ചിത്രം ഇവിടെ നൽകുക, തത്കാലം project-two ഇട്ടിരിക്കുന്നു) -->
+                    <div class="project-image" style="background-image: url('./images/project-two.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 320px !important; border-radius: 22px !important;">
+                        <div class="project-overlay">
+                            <div>Exhaust Systems</div>
+                            <div>Category 03</div>
                         </div>
                     </div>
+                    <div class="project-info">
+                        <h3>Custom Titanium Exhausts</h3>
+                        <p>Lightweight valvetronic exhaust setups designed for aggressive acoustics and peak power output.</p>
+                    </div>
+                </a>
+            </div>
 
-                </div>
+        </div> <!-- </div class="projects"> ഇവിടെ അവസാനിക്കുന്നു -->
 
         </section>
 
