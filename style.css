@@ -754,13 +754,13 @@ a {
 .project-image::before {
     content: "";
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 0px;                /* ➔ വലിപ്പം 0px ആക്കി മാറ്റി */
+    height: 0px;               /* ➔ വലിപ്പം 0px ആക്കി മാറ്റി */
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.13);
+    background: transparent;    /* ➔ ബാക്ക്ഗ്രൗണ്ട് കളർ ഒഴിവാക്കി */
     top: 20%;
     left: 30%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: none;     /* ➔ ബ്ലർ ഇഫക്റ്റ് പൂർണ്ണമായി ഒഴിവാക്കി */
     transition: transform 0.8s ease;
 }
 
