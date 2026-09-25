@@ -290,24 +290,22 @@ a {
 ========================================= */
 
 .hero {
-    position: relative;
-
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-
-    padding-top: 90px;
-
-    overflow: hidden;
+    display: flex !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+    padding-top: 90px !important;
+    position: relative !important;
 }
 
-.hero-content {
-    position: relative;
-
-    z-index: 3;
-
-    width: 58%;
+.hero .container.hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: min(calc(100% - 64px), var(--container)) !important;
+    margin-inline: auto !important;
+    position: relative !important;
+    z-index: 3 !important;
+    padding-bottom: 60px !important; /* താഴെയുള്ള ബാറിലേക്ക് കണ്ടന്റ് ഇടിയാതിരിക്കാൻ */
 }
 
 
@@ -346,17 +344,9 @@ a {
 ========================================= */
 
 .hero h1 {
-    width: 100%;
-
-    font-family: "Manrope", sans-serif;
-
-    font-size: clamp(38px, 4.4vw, 64px);
-
-    line-height: 1.1;
-
-    letter-spacing: -0.05em;
-
-    font-weight: 700;
+    max-width: 55% !important; 
+    font-size: clamp(38px, 4.2vw, 62px) !important;
+    line-height: 1.1 !important;
 }
 
 .hero h1 span {
@@ -410,23 +400,13 @@ a {
 ========================================= */
 
 .hero-autoparts-container {
-    position: absolute;
-
-    right: 4%;
-    top: 52%;
-
-    transform: translateY(-50%);
-
-    width: 36%;
-    max-width: 480px;
-
-    z-index: 2;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    pointer-events: none;
+    position: absolute !important;
+    right: calc((100% - min(calc(100% - 64px), var(--container))) / 2 + 2%) !important;
+    top: 48% !important; /* ചിത്രം അല്പം മുകളിലേക്ക് ഒതുക്കി */
+    transform: translateY(-50%) !important;
+    width: 38% !important;
+    max-width: 500px !important;
+    z-index: 2 !important;
 }
 
 .hero-autoparts-img {
@@ -463,28 +443,12 @@ a {
 ========================================= */
 
 .hero-bottom {
-    position: absolute;
-
-    z-index: 5;
-
-    bottom: 28px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: min(calc(100% - 64px), var(--container));
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    color: var(--muted);
-
-    font-size: 10px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.12em;
+    position: absolute !important;
+    bottom: 28px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: min(calc(100% - 64px), var(--container)) !important;
+    z-index: 5 !important;
 }
 
 .scroll-line {
