@@ -1692,19 +1692,21 @@ body {
 
 /* Header Navbar Styling */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 8%;
-    background-color: #fcfbf9;
-    position: relative;
-    z-index: 100;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 25px 8% !important;
+    background-color: #fcfbf9 !important;
+    position: relative !important; /* നടുവിലേക്ക് ലോക്ക് ചെയ്യാൻ ഇത് നിർബന്ധമാണ് */
+    z-index: 100 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    z-index: 10;
+    display: flex !important;
+    align-items: center !important;
+    z-index: 10 !important;
 }
 
 .logo img {
@@ -1719,22 +1721,21 @@ body {
     align-items: center !important;
     gap: 30px !important;
     
-    /* സ്ക്രീനിന്റെ കൃത്യം മധ്യത്തിലേക്ക് നിർബന്ധിതമായി ലോക്ക് ചെയ്യുന്നു */
+    /* Absolute Positioning വഴി സ്ക്രീനിന്റെ കൃത്യം 50% ഭാഗത്തേക്ക് ഫിക്സ് ചെയ്യുന്നു */
     position: absolute !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .nav-links a, .dropbtn {
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.3s;
-    background: none;
-    border: none;
-    cursor: pointer;
-    white-space: nowrap; /* ടെക്സ്റ്റ് താഴേക്ക് പോകാതിരിക്കാൻ */
+    text-decoration: none !important;
+    color: #555 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    transition: color 0.3s !important;
+    white-space: nowrap !important;
 }
 
 .nav-links a:hover, .dropdown:hover .dropbtn {
@@ -1742,26 +1743,31 @@ body {
 }
 
 .navbar-cta-box {
-    display: flex;
-    justify-content: flex-end;
-    z-index: 10;
+    display: flex !important;
+    justify-content: flex-end !important;
+    z-index: 10 !important;
 }
 
 .btn-cta {
-    text-decoration: none;
-    color: #1a1a1a;
-    border: 1px solid #1a1a1a;
-    padding: 10px 22px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    white-space: nowrap;
+    text-decoration: none !important;
+    color: #1a1a1a !important;
+    border: 1px solid #1a1a1a !important;
+    padding: 10px 22px !important;
+    border-radius: 30px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    white-space: nowrap !important;
 }
 
 .btn-cta:hover {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+/* മൊബൈൽ ബട്ടൺ തത്കാലം വലതുവശത്ത് ഒതുക്കി നിർത്താൻ */
+.menu-button {
+    z-index: 20 !important;
 }
 
 /* Dropdown Menu */
