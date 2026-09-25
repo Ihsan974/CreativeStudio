@@ -303,7 +303,12 @@ a {
 .hero-content {
     position: relative;
     z-index: 3;
-    width: 55%; /* എഴുത്തുകൾക്ക് സ്ക്രീനിന്റെ 55% സ്ഥലം മാത്രം നൽകുന്നു */
+    width: min(calc(100% - 64px), var(--container)); /* ഹെഡറിന്റെ അതേ കണ്ടെയ്നർ വീതി നൽകി */
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 
