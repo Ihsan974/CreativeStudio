@@ -1,4 +1,3 @@
-```css
 /* =========================================
    NOIR — CREATIVE DIGITAL STUDIO
    PREMIUM RESPONSIVE CSS
@@ -131,23 +130,27 @@ a {
 
 
 /* =========================================
-   HEADER
+   HEADER & NAVIGATION
 ========================================= */
 
 .header {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
+
     z-index: 1000;
 }
 
 .nav {
     height: 90px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: min(calc(100% - 64px), var(--container)); /* ഹെഡറിലെ ലിങ്കുകളെ താഴെയുള്ള കണ്ടന്റിന്റെ അതേ ലൈനിലേക്ക് കൊണ്ടുവരാൻ */
+
+    width: min(calc(100% - 64px), var(--container));
     margin-inline: auto;
 }
 
@@ -277,11 +280,6 @@ a {
     top: 23px;
 }
 
-
-/* =========================================
-   MOBILE MENU
-========================================= */
-
 .mobile-menu {
     display: none;
 }
@@ -293,22 +291,23 @@ a {
 
 .hero {
     position: relative;
+
     min-height: 100vh;
+
     display: flex;
     align-items: center;
+
     padding-top: 90px;
+
     overflow: hidden;
 }
 
 .hero-content {
     position: relative;
+
     z-index: 3;
-    width: min(calc(100% - 64px), var(--container)); /* ഹെഡറിന്റെ അതേ കണ്ടെയ്നർ വീതി നൽകി */
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+
+    width: 58%;
 }
 
 
@@ -347,11 +346,16 @@ a {
 ========================================= */
 
 .hero h1 {
-    max-width: 60%; /* എഴുത്തുകൾ കൃത്യമായി ഇടതുവശത്ത് നിൽക്കാൻ */
+    width: 100%;
+
     font-family: "Manrope", sans-serif;
-    font-size: clamp(38px, 4.2vw, 62px);
+
+    font-size: clamp(38px, 4.4vw, 64px);
+
     line-height: 1.1;
+
     letter-spacing: -0.05em;
+
     font-weight: 700;
 }
 
@@ -402,19 +406,19 @@ a {
 
 
 /* =========================================
-   HERO AUTOPARTS IMAGE
+   HERO AUTOPARTS
 ========================================= */
 
 .hero-autoparts-container {
     position: absolute;
 
     right: 4%;
-    top: 55%;
+    top: 52%;
 
     transform: translateY(-50%);
 
-    width: 38%;
-    max-width: 500px;
+    width: 36%;
+    max-width: 480px;
 
     z-index: 2;
 
@@ -499,6 +503,7 @@ a {
     padding: 130px 0;
 
     background: var(--text);
+
     color: var(--white);
 }
 
@@ -1198,7 +1203,9 @@ a {
         width: calc(100% - 50px);
     }
 
-    /* NAV */
+    .nav {
+        width: calc(100% - 50px);
+    }
 
     .desktop-nav,
     .nav-button {
@@ -1209,18 +1216,21 @@ a {
         display: block;
     }
 
+
     /* MOBILE MENU */
 
     .mobile-menu {
         position: absolute;
 
         top: 90px;
+
         left: 25px;
         right: 25px;
 
         padding: 25px;
 
         background: var(--text);
+
         color: var(--white);
 
         border-radius: 18px;
@@ -1277,6 +1287,10 @@ a {
         align-items: flex-start;
 
         padding-bottom: 60px;
+    }
+
+    .hero-content {
+        width: 100%;
     }
 
     .hero h1 {
@@ -1341,10 +1355,11 @@ a {
         width: calc(100% - 36px);
     }
 
-
     /* HEADER */
 
     .nav {
+        width: calc(100% - 36px);
+
         height: 78px;
     }
 
@@ -1366,8 +1381,6 @@ a {
         min-height: auto;
 
         padding-top: 105px;
-
-        align-items: flex-start;
     }
 
     .hero-label {
@@ -1377,11 +1390,9 @@ a {
     }
 
     .hero h1 {
-        font-size: 46px;
+        font-size: 44px;
 
-        line-height: 0.96;
-
-        max-width: 100%;
+        line-height: 1;
     }
 
     .hero-description {
@@ -1619,7 +1630,7 @@ a {
 @media (max-width: 380px) {
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .intro h2 {
@@ -1656,8 +1667,9 @@ a {
     *::before,
     *::after {
         animation-duration: 0.01ms !important;
+
         animation-iteration-count: 1 !important;
+
         transition-duration: 0.01ms !important;
     }
 }
-```
