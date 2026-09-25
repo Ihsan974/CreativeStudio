@@ -304,10 +304,9 @@ a {
 
 .hero-content {
     position: relative;
-
     z-index: 3;
-
     width: 58%;
+    padding-top: 60px; /* എഴുത്തുകൾ ഒരുപാട് താഴേക്ക് പോകാതെ മുകളിലേക്ക് കയറ്റി നിർത്താൻ */
 }
 
 
@@ -432,14 +431,10 @@ a {
 .hero-autoparts-img {
     width: 100%;
     height: auto;
-
     object-fit: contain;
-
     animation: partsFloat 5s ease-in-out infinite;
-
-    filter: drop-shadow(
-        0 15px 30px rgba(0, 0, 0, 0.12)
-    );
+    /* ഷാഡോ മാറ്റി കറക്റ്റ് ഇമേജിന് താഴെയാക്കാൻ താഴത്തെ വരി പുതുക്കുക */
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15)); 
 }
 
 @keyframes partsFloat {
