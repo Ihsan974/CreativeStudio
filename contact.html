@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start a Project — NOIR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION (മറ്റ് പേജുകളിലെ അതേ പ്രൊഫഷണൽ ഹെഡർ) -->
+    <header class="navbar" style="display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 25px 8% !important; background-color: #fcfbf9 !important; width: 100% !important; box-sizing: border-box !important;">
+        <div class="logo" style="display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border-radius: 0 !important; box-shadow: none !important;">
+            <a href="index.html" style="display: flex !important; align-items: center !important;">
+                <img src="./images/logo.png" alt="NOIR Logo" style="height: 28px !important; width: auto !important; display: block !important; object-fit: contain !important;">
+            </a>
+        </div>
+        <div style="display: flex !important; align-items: center !important; gap: 35px !important; margin-left: auto !important;">
+            <nav class="nav-links" style="display: flex !important; align-items: center !important; gap: 25px !important; margin: 0 !important; padding: 0 !important; position: static !important; transform: none !important;">
+                <div class="dropdown" style="position: relative; display: inline-block;">
+                    <a href="#" class="dropbtn" style="text-decoration: none !important; color: #1a1a1a !important; font-size: 14px !important; font-weight: 500 !important;">Products ▾</a>
+                    <div class="dropdown-content">
+                        <a href="wheels.html">Alloy Wheels</a>
+                        <a href="engine.html">Engine Modules</a>
+                        <a href="exhaust.html">Exhaust Systems</a>
+                    </div>
+                </div>
+                <a href="services.html" style="text-decoration: none !important; color: #1a1a1a !important; font-size: 14px !important; font-weight: 500 !important;">Services</a>
+                <a href="about.html" style="text-decoration: none !important; color: #1a1a1a !important; font-size: 14px !important; font-weight: 500 !important;">About</a>
+                <a href="contact.html" style="text-decoration: none !important; color: #1a1a1a !important; font-size: 14px !important; font-weight: 500 !important;">Contact</a>
+            </nav>
+            <div class="navbar-cta-box">
+    <!-- ഇവിടെ href="contact.html" എന്ന് കൃത്യമായി നൽകുക -->
+    <a href="contact.html" class="btn-cta" style="...">Start a project ↗</a>
+          </div>
+        </div>
+    </header>
+
+    <!-- CONTACT FORM SECTION -->
+    <main style="padding: 80px 8%; max-width: 800px; margin: 0 auto; background-color: #fcfbf9;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <p style="font-size: 12px; letter-spacing: 2px; color: #888; text-transform: uppercase; margin-bottom: 10px;">LET'S BUILD SOMETHING UNIQUE</p>
+            <h1 style="font-size: 42px; font-weight: 700; color: #1a1a1a; letter-spacing: -1px;">Start your project</h1>
+        </div>
+
+        <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 30px; background: #ffffff; padding: 40px; border-radius: 22px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+            
+            <!-- Row 1: Name and Email -->
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-size: 13px; font-weight: 600; color: #555;">Your Name *</label>
+                    <input type="text" required placeholder="John Doe" style="padding: 14px; border: 1px solid #e0dfdb; border-radius: 12px; font-size: 14px; background: #fcfbf9; outline: none; transition: border 0.3s;">
+                </div>
+                <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-size: 13px; font-weight: 600; color: #555;">Email Address *</label>
+                    <input type="email" required placeholder="john@example.com" style="padding: 14px; border: 1px solid #e0dfdb; border-radius: 12px; font-size: 14px; background: #fcfbf9; outline: none;">
+                </div>
+            </div>
+
+            <!-- Row 2: Service/Product Selection -->
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label style="font-size: 13px; font-weight: 600; color: #555;">What are you interested in? *</label>
+                <select required style="padding: 14px; border: 1px solid #e0dfdb; border-radius: 12px; font-size: 14px; background: #fcfbf9; outline: none; color: #333;">
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="wheels">Bespoke Alloy Wheels</option>
+                    <option value="engine">Engine Performance Modules</option>
+                    <option value="exhaust">Custom Exhaust Systems</option>
+                    <option value="other">Other Upgrades / General Inquiry</option>
+                </select>
+            </div>
+
+            <!-- Row 3: Message -->
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label style="font-size: 13px; font-weight: 600; color: #555;">Project Details *</label>
+                <textarea required rows="5" placeholder="Tell us about your vehicle model and specific performance or design requirements..." style="padding: 14px; border: 1px solid #e0dfdb; border-radius: 12px; font-size: 14px; background: #fcfbf9; outline: none; font-family: inherit; resize: vertical;"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div style="text-align: right;">
+                <button type="submit" style="background: #1a1a1a; color: #ffffff; border: none; padding: 14px 35px; border-radius: 30px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.3s; display: inline-flex; align-items: center; gap: 10px;">
+                    Submit Inquiry ↗
+                </button>
+            </div>
+
+        </form>
+    </main>
+
+    <!-- FOOTER SECTION (മറ്റ് പേജുകളിലെ അതേ ഫൂട്ടർ) -->
+    <footer class="footer-section" style="background-color: #f6f5f2; padding: 60px 8% 30px 8%; margin-top: 100px;">
+        <hr style="border: 0; border-top: 1px solid #e0dfdb; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #888;">
+            <p>&copy; 2026 NOIR Automotive. All rights reserved.</p>
+            <p>Crafted with passion</p>
+        </div>
+    </footer>
+
+</body>
+</html>
 
