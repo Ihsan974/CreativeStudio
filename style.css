@@ -344,7 +344,7 @@ a {
 ========================================= */
 
 .hero h1 {
-    max-width: 55% !important; 
+    max-width: 48% !important; 
     font-size: clamp(38px, 4.2vw, 62px) !important;
     line-height: 1.1 !important;
 }
