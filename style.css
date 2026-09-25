@@ -1323,34 +1323,7 @@ a {
    MOBILE
 ========================================= */
 
-@media (max-width: 900px) {
-
-   .hero {
-        min-height: auto !important;
-        padding-top: 120px !important;
-        padding-bottom: 60px !important;
-        display: block !important;
-    }
-   .hero .container.hero-content {
-        width: calc(100% - 50px) !important;
-        display: block !important;
-    }
-    
-    .hero h1 {
-        max-width: 100% !important;
-        font-size: 38px !important;
-    }
-    
-    .hero-autoparts-container {
-        position: relative !important;
-        top: auto !important;
-        right: auto !important;
-        transform: none !important;
-        width: 100% !important;
-        max-width: 280px !important;
-        margin: 35px auto 0 !important;
-        display: flex !important;
-    }
+@media (max-width: 600px) {
     
     .hero-bottom {
         position: relative !important;
