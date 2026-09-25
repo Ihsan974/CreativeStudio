@@ -333,13 +333,13 @@
 
 
                         <!-- ഇതാണ് പ്രധാനപ്പെട്ട മാറ്റം: inline style വഴി ഇതിനെ 2 കോളങ്ങളുള്ള ഗ്രിഡ് ആക്കുന്നു -->
-        <div class="projects" style="display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 40px 30px !important; width: 100% !important;">
+                <!-- പ്രധാന മാറ്റം: display: grid-നൊപ്പം ബോക്സുകൾ കൃത്യമായി വശങ്ങളിലേക്ക് പരന്നു നിൽക്കാൻ width: 100% ഉം justify-items നൽകിയിട്ടുണ്ട് -->
+        <div class="projects" style="display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 40px 30px !important; width: 100% !important; justify-content: stretch !important;">
 
-            <!-- <!-- Project 01 — ഇതാണ് വലിയ കാർഡ് (ഇതിന് മാത്രം grid-column: span 2 നൽകി) --> -->
-            <div class="project project-large" style="grid-column: span 2 !important; width: 100% !important;">
-                <a href="wheels.html" class="project-project-large">
-                    <!-- ഇമേജ് ബോക്സ് (വലിയ കാർഡിന് ഭംഗി കൂട്ടാൻ max-height നൽകാം) -->
-                    <div class="project-image" style="background-image: url('./images/project-one.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px !important; border-radius: 22px !important;">
+            <!-- Project 01 — വലിയ കാർഡ് (മുകളിൽ ഫുൾ വീതിയിൽ നിൽക്കും) -->
+            <div class="project project-large" style="grid-column: span 2 !important; width: 100% !important; margin: 0 !important;">
+                <a href="wheels.html" class="project-project-large" style="display: block !important; width: 100% !important;">
+                    <div class="project-image" style="background-image: url('./images/project-one.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px !important; border-radius: 22px !important; width: 100% !important;">
                         <div class="project-overlay">
                             <div>Featured Product</div>
                             <div>Category 01</div>
@@ -352,11 +352,10 @@
                 </a>
             </div>
 
-            <!-- <!-- Project 02 — ഇടതുവശത്ത് പകുതി വലിപ്പത്തിൽ വരുന്നത് --> -->
-            <div class="project" style="width: 100% !important;">
-                <a href="engine.html" class="project">
-                    <!-- ഇമേജ് ബോക്സ് (പകുതി കാർഡിന് അനുയോജ്യമായ height: 320px ആക്കിയത്) -->
-                    <div class="project-image" style="background-image: url('./images/project-two.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 320px !important; border-radius: 22px !important;">
+            <!-- Project 02 — ഇടതുവശത്ത് പകുതി വലിപ്പത്തിൽ വരുന്നത് (margin ഫിക്സ് ചെയ്തു) -->
+            <div class="project" style="width: 100% !important; margin: 0 !important;">
+                <a href="engine.html" class="project" style="display: block !important; width: 100% !important;">
+                    <div class="project-image" style="background-image: url('./images/project-two.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 320px !important; border-radius: 22px !important; width: 100% !important;">
                         <div class="project-overlay">
                             <div>Performance Upgrades</div>
                             <div>Category 02</div>
@@ -369,11 +368,10 @@
                 </a>
             </div>
 
-            <!-- <!-- Project 03 — വലതുവശത്ത് പകുതി വലിപ്പത്തിൽ വരുന്നത് --> -->
-            <div class="project" style="width: 100% !important;">
-                <a href="exhaust.html" class="project">
-                    <!-- ഇമേജ് ബോക്സ് (പ്രൊജക്റ്റ് 3-ന്റെ ചിത്രം ഇവിടെ നൽകുക, തത്കാലം project-two ഇട്ടിരിക്കുന്നു) -->
-                    <div class="project-image" style="background-image: url('./images/project-two.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 320px !important; border-radius: 22px !important;">
+            <!-- Project 03 — വലതുവശത്ത് പകുതി വലിപ്പത്തിൽ വരുന്നത് (margin ഫിക്സ് ചെയ്തു) -->
+            <div class="project" style="width: 100% !important; margin: 0 !important;">
+                <a href="exhaust.html" class="project" style="display: block !important; width: 100% !important;">
+                    <div class="project-image" style="background-image: url('./images/project-two.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 320px !important; border-radius: 22px !important; width: 100% !important;">
                         <div class="project-overlay">
                             <div>Exhaust Systems</div>
                             <div>Category 03</div>
@@ -386,7 +384,7 @@
                 </a>
             </div>
 
-        </div> <!-- </div class="projects"> ഇവിടെ അവസാനിക്കുന്നു -->
+        </div> <!-- </div class="projects"> ബോക്സ് ഇവിടെ അവസാനിക്കുന്നു -->
 
         </section>
 
