@@ -344,16 +344,11 @@ a {
 ========================================= */
 
 .hero h1 {
-    max-width: 55%;
-
+    max-width: 65%;
     font-family: "Manrope", sans-serif;
-
-    font-size: clamp(40px, 5.5vw, 76px);
-
-    line-height: 1.05;
-
-    letter-spacing: -0.065em;
-
+    font-size: clamp(40px, 4.8vw, 68px);
+    line-height: 1.1;
+    letter-spacing: -0.05em;
     font-weight: 700;
 }
 
