@@ -1700,11 +1700,16 @@ body {
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #1a1a1a;
+}
+
+.logo img {
+    height: 24px; /* ആദ്യത്തെ സ്ക്രീൻഷോട്ടിലെ വലുപ്പത്തിന് അനുസരിച്ച് (ആവശ്യമെങ്കിൽ മാറ്റാം) */
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .nav-links {
