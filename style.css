@@ -1625,3 +1625,53 @@ a {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* =========================================
+   DESKTOP DROPDOWN SUB-MENU STYLES
+========================================= */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-trigger {
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--text);
+    min-width: 180px;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    z-index: 2000;
+}
+
+.dropdown-menu a {
+    color: var(--white) !important;
+    padding: 10px 20px;
+    display: block;
+    font-size: 12px !important;
+    font-weight: 500;
+    transition: background var(--transition);
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+}
+
+.dropdown-menu a::after {
+    display: none !important; /* സബ് മെനുവിൽ അനാവശ്യ ലൈനുകൾ ഒഴിവാക്കാൻ */
+}
+
+/* മൗസ് കൊണ്ട് വരുമ്പോൾ സബ് മെനു കാണിക്കാൻ */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
