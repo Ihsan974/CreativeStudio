@@ -1697,16 +1697,14 @@ body {
     align-items: center;
     padding: 25px 8%;
     background-color: #fcfbf9;
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 100;
 }
 
 .logo {
-    flex: 1; /* ഇടതുവശത്ത് തുല്യമായ സ്ഥലം നൽകുന്നു */
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    z-index: 10;
 }
 
 .logo img {
@@ -1719,9 +1717,12 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 30px;
-    flex: 2; /* നടുവിലുള്ള മെനുവിന് കൂടുതൽ പ്രാധാന്യം നൽകുന്നു */
+    
+    /* Absolute Positioning വഴി സ്ക്രീനിന്റെ നടുവിലേക്ക് കൃത്യമായി ലോക്ക് ചെയ്യുന്നു */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links a, .dropbtn {
@@ -1741,9 +1742,9 @@ body {
 }
 
 .navbar-cta-box {
-    flex: 1; /* വലതുവശത്ത് തുല്യമായ സ്ഥലം നൽകുന്നു */
     display: flex;
     justify-content: flex-end;
+    z-index: 10;
 }
 
 .btn-cta {
