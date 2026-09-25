@@ -1695,18 +1695,22 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 8%;
+    padding: 25px 8%;
     background-color: #fcfbf9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.logo a {
+.logo {
+    flex: 1; /* ഇടതുവശത്ത് തുല്യമായ സ്ഥലം നൽകുന്നു */
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    text-decoration: none;
 }
 
 .logo img {
-    height: 40px; /* ആദ്യത്തെ സ്ക്രീൻഷോട്ടിലെ വലുപ്പത്തിന് അനുസരിച്ച് (ആവശ്യമെങ്കിൽ മാറ്റാം) */
+    height: 40px; /* ലോഗോയുടെ വലുപ്പം കൃത്യമാക്കി */
     width: auto;
     display: block;
     object-fit: contain;
@@ -1715,7 +1719,9 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
+    flex: 2; /* നടുവിലുള്ള മെനുവിന് കൂടുതൽ പ്രാധാന്യം നൽകുന്നു */
 }
 
 .nav-links a, .dropbtn {
@@ -1727,10 +1733,34 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    white-space: nowrap; /* ടെക്സ്റ്റ് താഴേക്ക് പോകാതിരിക്കാൻ */
 }
 
 .nav-links a:hover, .dropdown:hover .dropbtn {
     color: #ff4500;
+}
+
+.navbar-cta-box {
+    flex: 1; /* വലതുവശത്ത് തുല്യമായ സ്ഥലം നൽകുന്നു */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-cta {
+    text-decoration: none;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-cta:hover {
+    background-color: #1a1a1a;
+    color: #fff;
 }
 
 /* Dropdown Menu */
