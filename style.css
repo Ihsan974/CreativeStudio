@@ -144,10 +144,11 @@ a {
 
 .nav {
     height: 90px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: min(calc(100% - 64px), var(--container)); /* ഹെഡറിലെ ലിങ്കുകളെ താഴെയുള്ള കണ്ടന്റിന്റെ അതേ ലൈനിലേക്ക് കൊണ്ടുവരാൻ */
+    margin-inline: auto;
 }
 
 
