@@ -18,40 +18,43 @@
     ========================== -->
 
         <!-- HEADER SECTION -->
-    <header class="navbar">
-        <!-- 1. Logo Box -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="./images/logo.png" alt="Logo" style="height: 45px; width: auto;">
+        <!-- HEADER SECTION (മെയിൻ പേജിലെ ഹെഡർ അലൈൻമെന്റ് കൃത്യമാക്കിയത്) -->
+    <header class="navbar" style="display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 25px 8% !important; background-color: #fcfbf9 !important; width: 100% !important; box-sizing: border-box !important;">
+        
+        <!-- 1. Logo Box (ലോഗോയ്ക്ക് പിന്നിലെ ബോക്സ് ഒഴിവാക്കിയത്) -->
+        <div class="logo" style="display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border-radius: 0 !important; box-shadow: none !important;">
+            <a href="index.html" style="display: flex !important; align-items: center !important; background: none !important; padding: 0 !important;">
+                <img src="./images/logo.png" alt="NOIR Logo" style="height: 28px !important; width: auto !important; display: block !important; object-fit: contain !important; background: none !important;">
             </a>
         </div>
         
-        <!-- 2. Central Navigation Links (ക്ലാസ്സ് 'nav-links' എന്ന് മാറ്റിയിട്ടുണ്ട്) -->
-        <nav class="nav-links">
-            <div class="dropdown">
-                <a href="wheels.html" class="dropbtn">Products ▾</a>
-                <div class="dropdown-content">
-                    <a href="wheels.html">Alloy Wheels</a>
-                    <a href="engine.html">Engine Modules</a>
-                    <a href="exhaust.html">Exhaust Systems</a>
+        <!-- Right Content Block (മെനുവും ബട്ടണും ഒന്നിച്ച് വലതുവശത്ത് ഒതുക്കാൻ വേണ്ടി) -->
+        <div style="display: flex !important; align-items: center !important; gap: 35px !important; margin-left: auto !important;">
+            
+            <!-- 2. Navigation Links (ആവശ്യമായ ചെറിയ സ്പേസിങ് നൽകിയത്) -->
+            <nav class="nav-links" style="display: flex !important; align-items: center !important; gap: 25px !important; margin: 0 !important; padding: 0 !important; position: static !important; transform: none !important;">
+                <div class="dropdown" style="position: relative; display: inline-block;">
+                    <a href="#" class="dropbtn" style="text-decoration: none !important; color: #1a1a1a !important; font-size: 14px !important; font-weight: 500 !important;">Products ▾</a>
+                    <div class="dropdown-content">
+                        <a href="wheels.html">Alloy Wheels</a>
+                        <a href="engine.html">Engine Modules</a>
+                        <a href="exhaust.html">Exhaust Systems</a>
+                    </div>
                 </div>
+                <a href="services.html" style="text-decoration: none !important; color: #1a1a1a !important; font-size: 14px !important; font-weight: 500 !important;">Services</a>
+                <a href="about.html" style="text-decoration: none !important; color: #1a1a1a !important; font-size: 14px !important; font-weight: 500 !important;">About</a>
+                <a href="contact.html" style="text-decoration: none !important; color: #1a1a1a !important; font-size: 14px !important; font-weight: 500 !important;">Contact</a>
+            </nav>
+            
+            <!-- 3. CTA Button -->
+            <div class="navbar-cta-box" style="display: flex !important; align-items: center !important;">
+                <a href="contact.html" class="btn-cta" style="text-decoration: none !important; color: #1a1a1a !important; border: 1px solid #1a1a1a !important; padding: 10px 22px !important; border-radius: 30px !important; font-size: 13px !important; font-weight: 500 !important; white-space: nowrap !important;">Start a project ↗</a>
             </div>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        
-        <!-- 3. CTA Button Box -->
-        <div class="navbar-cta-box">
-            <a href="contact.html" class="btn-cta">Start a project ↗</a>
+            
         </div>
-
-        <!-- Mobile Menu Button (ആവശ്യമെങ്കിൽ മാത്രം) -->
-        <button class="menu-button" id="menuButton">
-            <span></span>
-            <span></span>
-        </button>
+        
     </header>
+
 
 
         </div>
