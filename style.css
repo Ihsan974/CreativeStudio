@@ -772,20 +772,13 @@ a {
 }
 
 .project-image::after {
-    content: "NOIR";
-
+    content: ""; /* ➔ "NOIR" എന്നത് ഒഴിവാക്കി ബ്ലാങ്ക് ആക്കി മാറ്റുക */
     position: absolute;
-
     font-family: "Manrope", sans-serif;
-
     font-size: clamp(55px, 7vw, 100px);
-
     font-weight: 800;
-
     letter-spacing: -0.08em;
-
     color: rgba(255, 255, 255, 0.15);
-
     bottom: 25px;
     left: 28px;
 }
