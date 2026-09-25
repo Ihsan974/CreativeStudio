@@ -2103,3 +2103,21 @@ h1 {
         gap: 20px;
     }
 }
+
+<section class="work-section container">
+    <div class="work-header">
+        <h2>Made with intent.</h2>
+        <a href="#" class="btn-secondary">View all projects ↗</a>
+    </div>
+
+    <div class="work-grid">
+        <!-- വലിയ കാർഡ് -->
+        <div class="work-card large-card"> ... </div>
+        
+        <!-- ആദ്യത്തെ പകുതി കാർഡ് -->
+        <div class="work-card half-card"> ... </div>
+        
+        <!-- രണ്ടാമത്തെ പകുതി കാർഡ് -->
+        <div class="work-card half-card"> ... </div>
+    </div>
+</section>
